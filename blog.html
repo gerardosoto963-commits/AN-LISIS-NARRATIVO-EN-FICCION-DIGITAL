@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitácora Pedagógica | Laboratorio Hermenéutico</title>
+  <!-- Enlaza aquí tus mismos estilos CSS de la página principal -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Ajustes específicos para el formato Blog Editorial */
+    .blog-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    .blog-header {
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 3rem;
+      margin-bottom: 4rem;
+    }
+    .blog-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: monospace;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    .blog-nav a {
+      color: var(--text);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .blog-nav a:hover {
+      color: var(--red);
+    }
+    /* Estructura de filas del Blog */
+    .blog-post-row {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 3rem;
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--line);
+      transition: background-color 0.2s ease;
+    }
+    .blog-post-row:hover {
+      background-color: rgba(0, 0, 0, 0.01); /* Variación sutil */
+    }
+    .post-meta {
+      font-family: monospace;
+    }
+    .post-date {
+      font-size: 0.85rem;
+      opacity: 0.6;
+      margin-bottom: 0.5rem;
+    }
+    .post-category {
+      display: inline-block;
+      color: var(--red);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      border: 1px solid var(--red);
+      padding: 0.2rem 0.6rem;
+      margin-top: 0.5rem;
+    }
+    .post-content h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    .post-content p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      opacity: 0.9;
+      max-width: 750px;
+    }
+    @media (max-width: 768px) {
+      .blog-post-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 2rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blog-container">
+    <!-- NAVEGACIÓN SUPERIOR -->
+    <nav class="blog-nav">
+      <a href="index.html">← VOLVER AL LABORATORIO</a>
+      <span>[ REPOSITORIO ABIERTO ]</span>
+    </nav>
+
+    <!-- CABECERA DEL BLOG -->
+    <header class="blog-header">
+      <p class="eyebrow" style="color: var(--red);">BITÁCORA DE AULA</p>
+      <h1 style="font-size: 3rem; font-weight: 900; letter-spacing: -0.02em; margin: 0.5rem 0 1.5rem 0;">ESTRATEGIAS DIDÁCTICAS</h1>
+      <p style="font-size: 1.2rem; max-width: 800px; opacity: 0.8; line-height: 1.5;">
+        Documentación, secuencias de lectura multimodal y experiencias metodológicas diseñadas para expandir la pedagogía de las narrativas digitales.
+      </p>
+    </header>
+
+    <!-- FEED PRINCIPAL DE ARTÍCULOS (ESTILO FILA EDITORIAL) -->
+    <main id="blogFeed">
+      <!-- Entrada 1 -->
+      <article class="blog-post-row">
+        <div class="post-meta">
+          <div class="post-date">05 JUN 2026</div>
+          <div class="post-category">Lectura multimodal</div>
+        </div>
+        <div class="post-content">
+          <h2>Actividad Inicial: Rompiendo el código lúdico</h2>
+          <p>
+           Al proponer al grupo de estudiantes observar los primeros 10 minutos de juego en Hollow Knight, pida separar explícitamente lo que comunica la paleta de color ceniza, la melodía melancólica del piano y la libertad espacial del avatar. Esta actividad obliga a los estudiantes a aislar canales que normalmente operan en simultáneo, la actividad transforma su rol: se convierten en analistas semióticos capaces de deconstruir un texto digital complejo.
+          </p>
+        </div>
+      </article>
+
+      <!-- Entrada 2 -->
+      <article class="blog-post-row">
+        <div class="post-meta">
+          <div class="post-date">28 MAY 2026</div>
+          <div class="post-category">Didáctica Práctica</div>
+        </div>
+        <div class="post-content">
+          <h2>Discusión en el Aula: El bucle formal como figura literaria</h2>
+          <p>
+            Sobre las dinámicas mecánicas de Enter the Gungeon. ¿Cómo resignifica el alumno la repetición constante del gameplay frente al mito de Sísifo o las estructuras poéticas de carácter circular? Un excelente detonador crítico para conectar conceptos de la literatura clásica con las estructuras de persistencia y frustración en entornos interactivos.
+          </p>
+        </div>
+      </article>
+
+      <!-- Entrada 3 -->
+      <article class="blog-post-row">
+        <div class="post-meta">
+          <div class="post-date">15 MAY 2026</div>
+          <div class="post-category">Rúbrica de Evaluación</div>
+        </div>
+        <div class="post-content">
+          <h2>La Coherencia Ludonarrativa y la Función Núcleo</h2>
+          <p>
+            Solicite a los estudiantes el vaciado estructurado de las funciones núcleo de Celeste. El alumno debe argumentar por qué vencer a la contraparte de Madeline constituye un nexo estructural insustituible y cómo el diseño de niveles y la dificultad mecánica de la escalada operan como una metáfora interactiva de la ansiedad.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <!-- PIE DE PÁGINA MINIMALISTA -->
+    <footer style="margin-top: 8rem; padding-top: 2rem; border-top: 1px dashed var(--line); font-family: monospace; font-size: 0.85rem; opacity: 0.6; text-align: center;">
+      Laboratorio de Narrativas Digitales © 2026 — Documentación Docente Permanente.
+    </footer>
+  </div>
+
+</body>
+</html>
